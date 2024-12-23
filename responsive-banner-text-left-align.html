@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="responsive-banner-text-left-align.css" />
+		<title>Responsive Banner</title>
+	</head>
+	<body>
+		<div class="banner-container">
+			<picture>
+				<source media="(max-width: 600px)" srcset="banner-mobile.jpg" />
+				<source media="(max-width: 900px)" srcset="banner-tablet.jpg" />
+				<source media="(max-width: 1200px)" srcset="banner-laptop.jpg" />
+				<img
+					class="banner-image"
+					loading="eager"
+					decoding="sync"
+					src="banner-desktop.jpg"
+					alt="Banner Image"
+				/>
+			</picture>
+			<div class="banner-overlay"></div>
+			<div class="banner-content">
+				<h1 class="banner-title">Lorem Ipsum</h1>
+				<p class="banner-description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
